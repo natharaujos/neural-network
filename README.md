@@ -12,11 +12,11 @@ E a random:
 ## Arquivos
 O repositório contém os seguintes arquivos:
 
-```simular_RN.py:``` contém a implementação da rede neural, incluindo as funções de inicialização, feedforward e backpropagation.
-```calcular_Erro_RN.py:``` contém a implementação do cálculo do erro entre a saída esperada e a saída produzida pela rede.
-```matriz_pesos_RN.py:``` contém a implementação da matriz de pesos da rede neural, que é atualizada durante o treinamento.
-```gradient_discent_RN.py:``` contém a implementação do algoritmo do Gradiente Descendente, que ajusta os pesos da rede de forma iterativa.
-```treino-gradient_discent_RN.py:``` contém a implementação do treinamento da rede neural utilizando o algoritmo do Gradiente Descendente.
+```simular_RN.py:``` contém a implementação da rede neural, incluindo as funções de inicialização, feedforward e backpropagation. <br />
+```calcular_Erro_RN.py:``` contém a implementação do cálculo do erro entre a saída esperada e a saída produzida pela rede. <br />
+```matriz_pesos_RN.py:``` contém a implementação da matriz de pesos da rede neural, que é atualizada durante o treinamento. <br />
+```gradient_discent_RN.py:``` contém a implementação do algoritmo do Gradiente Descendente, que ajusta os pesos da rede de forma iterativa. <br />
+```treino-gradient_discent_RN.py:``` contém a implementação do treinamento da rede neural utilizando o algoritmo do Gradiente Descendente. <br />
 
 ## Funcionamento
 A rede neural é inicializada com um número variável de neurônios em cada camada, bem como com um número variável de camadas ocultas. Durante o treinamento, a matriz de pesos é atualizada utilizando o algoritmo do Gradiente Descendente, que consiste em ajustar os pesos da rede de forma iterativa, de modo a minimizar o erro entre a saída esperada e a saída produzida pela rede.
