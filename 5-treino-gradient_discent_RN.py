@@ -20,15 +20,17 @@ bias = [1, 2, 3, 5]
 
 taxa_aprendizagem = .1
 
-x = [-3]
-y = [0.73212]
+x = [-3, -2.0,-1.0,-0.5,0.0 ,0.5 ,1.0 ,1.5 ,2.0 ,3.0 ]
+y = [0.73212, 0.7339, 0.7838, 0.8903, 0.9820, 0.8114, 0.5937, 0.5219, 0.5049, 0.5002]
+
+
 
 def treinar_rede_neural():
 
     # Loop de treinamento
     for epoca in range(num_epocas):
         # Forward pass
-        for i in range(1):
+        for i in range(10):
             input_a5 = x[i]
             input_a3 = sigmoid((pesos[5] * input_a5) + bias[0])
             input_a4 = sigmoid((pesos[6] * input_a5) + bias[1])    
@@ -53,7 +55,8 @@ def treinar_rede_neural():
             pesos[5] = pesos[5] - (delta_a3 * taxa_aprendizagem) 
             pesos[6] = pesos[6] - (delta_a4 * taxa_aprendizagem) 
 
-        print(pesos)
+        print("Pesos : ", pesos)
+        print("\n")
 
 
 treinar_rede_neural()
