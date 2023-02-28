@@ -5,7 +5,7 @@ Este repositório contém uma implementação básica de uma rede neural utiliza
 ## Arquivos
 O repositório contém os seguintes arquivos:
 
-<span><pre><code>simular_RN.py:</code></pre></span> contém a implementação da rede neural, incluindo as funções de inicialização, feedforward e backpropagation.
+```simular_RN.py:``` contém a implementação da rede neural, incluindo as funções de inicialização, feedforward e backpropagation.
 calcular_Erro_RN.py: contém a implementação do cálculo do erro entre a saída esperada e a saída produzida pela rede.
 matriz_pesos_RN.py: contém a implementação da matriz de pesos da rede neural, que é atualizada durante o treinamento.
 gradient_discent_RN.py: contém a implementação do algoritmo do Gradiente Descendente, que ajusta os pesos da rede de forma iterativa.
