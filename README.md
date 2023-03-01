@@ -29,4 +29,6 @@ A função de ativação utilizada é a Sigmoid e sua derivada, que são calcula
 Após o treinamento, a rede neural é capaz de produzir uma saída para um conjunto de entradas dado, utilizando a função de feedforward implementada no arquivo simular_RN.py, e que foi replicada no arquivo ```treino-gradient_discent_RN.py```.
 
 ## Como usar
-Para utilizar a rede neural implementada neste repositório, basta clonar o repositório para o seu computador e executar o arquivo treino-gradient_discent_RN.py. Certifique-se de que as dependências necessárias estejam instaladas.
+Para utilizar a rede neural implementada neste repositório, basta clonar o repositório para o seu computador e executar o arquivo: </br>
+```treino-gradient_discent_RN.py``` 
+Certifique-se de que as dependências necessárias estejam instaladas.
