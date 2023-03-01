@@ -1,12 +1,21 @@
+# Trabalho realizado por:
+#
+# Breno Campos Barbosa - 201910143
+# Nathan Araújo Silva - 201910762
+#
+
 import numpy as np
 from random import random
 
+#Função que retorna sigmoid
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
+#Função que retorna sigmoid derivada
 def sigmoid_derivada(x):
     return x * (1-x)
 
+#Função que retorna relux
 def relux(x):
     if (x >= 0):
         return x
@@ -19,7 +28,8 @@ resultado_esperado = 10
 
 pesos = [0.5, 0.4, 2, 3, 5, 8, 9]
 bias = [1, 2, 3, 5]
-    
+
+#Função para simular a rede neural.
 def simulate():
     for i in range(1):
         input_a5 = treinamento_input

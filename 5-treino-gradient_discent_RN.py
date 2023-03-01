@@ -1,12 +1,22 @@
+
+# Trabalho realizado por:
+#
+# Breno Campos Barbosa - 201910143
+# Nathan Araújo Silva - 201910762
+#
+
 import numpy as np
 from random import random
 
+#Função que retorna sigmoid
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
+#Função que retorna a derivada da sigmoid
 def sigmoid_derivada(x):
     return x * (1-x)
 
+#Função que retorna relux
 def relux(x):
     if (x >= 0):
         return x
@@ -29,7 +39,7 @@ def treinar_rede_neural():
 
     # Loop de treinamento
     for epoca in range(num_epocas):
-        # Forward pass
+        # Feedforward
         for i in range(10):
             input_a5 = x[i]
             input_a3 = sigmoid((pesos[5] * input_a5) + bias[0])
@@ -39,7 +49,7 @@ def treinar_rede_neural():
             output = input_a1
             
 
-            # Backward pass
+            # BackPropagation
             erro_output = y[i] - output
             delta_output = sigmoid_derivada(output) * erro_output
             delta_a2 = delta_output * pesos[0] * sigmoid_derivada(input_a2)

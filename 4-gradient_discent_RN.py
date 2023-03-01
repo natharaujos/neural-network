@@ -1,12 +1,24 @@
+# Trabalho realizado por:
+#
+# Breno Campos Barbosa - 201910143
+# Nathan Araújo Silva - 201910762
+#
+
+
 import numpy as np
 from random import random
 
+
+#Função que retorna sigmoid
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
+#Função que retorna a derivada da sigmoid
 def sigmoid_derivada(x):
     return x * (1-x)
 
+
+#Função que retorna relux
 def relux(x):
     if (x >= 0):
         return x

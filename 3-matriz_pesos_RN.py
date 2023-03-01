@@ -1,12 +1,22 @@
+
+# Trabalho realizado por:
+#
+# Breno Campos Barbosa - 201910143
+# Nathan Araújo Silva - 201910762
+#
+
 import numpy as np
 from random import random
 
+#Função que retorna sigmoid
 def sigmoid(x):
     return 1 / (1 + np.exp(-x))
 
+#Função que retorna sigmoid derivada
 def sigmoid_derivada(x):
     return x * (1-x)
 
+#Função que retorna relux
 def relux(x):
     if (x >= 0):
         return x
@@ -17,9 +27,10 @@ treinamento_input = [0.0, 1.0]
 
 resultado_esperado = [0.5, 0.1]
 
-pesos = [3, -4, -1, 1, -3, 2, -10]
+pesos = [3, -4, -1, 1, -3, 2, -10]# Matriz de pesos fornecida na atividade
 bias = [1, 2, 3, 5]
-    
+
+#Função para simular a rede neural.
 def simulate():
     for i in range(2):
         input_a5 = treinamento_input[i]
@@ -30,7 +41,7 @@ def simulate():
         output = input_a1
         delta_calculate(output, input_a2, input_a3, input_a4, resultado_esperado[i], input_a5)
 
-# delta_saida * peso_aresta_saida * derivada da funcao de ativacao daquele neuronio
+#Função que calcula o delta de cada neurônio
 def delta_calculate(output, a2, a3, a4, resultado, input):
     delta_output = sigmoid_derivada(output) * (resultado - output)
     delta_a2 = delta_output * pesos[0] * sigmoid_derivada(a2)
