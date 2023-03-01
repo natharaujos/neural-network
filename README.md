@@ -1,5 +1,5 @@
 # Basic Neural Network
-## Documentação do Repositório de Rede Neural Básica
+## Documentação 
 Este repositório contém uma implementação básica de uma rede neural utilizando a linguagem Python. A rede neural é capaz de simular uma rede com uma única camada oculta, com um número variável de neurônios em cada camada. A rede é treinada utilizando o algoritmo do Gradiente Descendente com a função de ativação Sigmoid e sua derivada.
 
 ## Colaborador
